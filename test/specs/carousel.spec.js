@@ -25,9 +25,11 @@ describe('Carousel', function () {
       setup();
       component = ReactDOM.render(
         React.createElement(carousel, {},
-          React.createElement('p', null, 'Slide 1'),
-          React.createElement('p', null, 'Slide 2'),
-          React.createElement('p', null, 'Slide 3')
+          React.createElement('div', {},
+            React.createElement('p', null, 'Slide 1'),
+            React.createElement('p', null, 'Slide 2'),
+            React.createElement('p', null, 'Slide 3')
+          )
         ),
         container
       );
@@ -56,9 +58,11 @@ describe('Carousel', function () {
     it('should render a .slider div', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -72,9 +76,11 @@ describe('Carousel', function () {
     it('should render a .slider-frame div', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -88,9 +94,11 @@ describe('Carousel', function () {
     it('should render a .slider-list ul', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -104,9 +112,11 @@ describe('Carousel', function () {
     it('should render children with a .slider-slide class', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -120,9 +130,11 @@ describe('Carousel', function () {
     it('should render decorators by default', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -158,9 +170,11 @@ describe('Carousel', function () {
     it('should render with class "slider" with no props supplied', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -174,9 +188,11 @@ describe('Carousel', function () {
     it('should render with class "test" with className supplied', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {className: 'test'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -190,9 +206,11 @@ describe('Carousel', function () {
     it('should merge provided styles with the defaults', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {style: {backgroundColor: 'black'}},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -207,9 +225,11 @@ describe('Carousel', function () {
     it('should merge provided styles with the defaults', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {style: {backgroundColor: 'black'}},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -224,9 +244,11 @@ describe('Carousel', function () {
     it('should align to 0 if cellAlign is left', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3,cellAlign: 'left', width: "500px"},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -240,9 +262,11 @@ describe('Carousel', function () {
     it('should align to 200 if cellAlign is center', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3,cellAlign: 'center', width: '600px'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -257,9 +281,11 @@ describe('Carousel', function () {
     it('should align to 400 if cellAlign is right', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3,cellAlign: 'right', width: '600px'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -274,9 +300,11 @@ describe('Carousel', function () {
     it('should set slide width to 200 if cellSpacing is not provided', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3, width: '600px'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -291,9 +319,11 @@ describe('Carousel', function () {
     it('should set slide width to 180 if cellSpacing is set to 30', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3, cellSpacing: 30, width: '600px'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -308,9 +338,11 @@ describe('Carousel', function () {
     it('should not add mouse handlers if dragging is false', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {dragging: false},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -325,9 +357,11 @@ describe('Carousel', function () {
     it('should add mouse handlers if dragging is true', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {dragging: false},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -342,9 +376,11 @@ describe('Carousel', function () {
     it('should add frame margin if framePadding is supplied a value', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {framePadding: '40px'},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -359,9 +395,11 @@ describe('Carousel', function () {
     it('should set slideWidth to 1000 if slidesToShow is 1', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 1, width: "1000px"},
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -377,9 +415,11 @@ describe('Carousel', function () {
     it('should set slideWidth to 200 if slidesToShow is 3', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 3, width: "600px"},
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -395,10 +435,12 @@ describe('Carousel', function () {
     it('should have currentSlide equal 2 for 4 slides if slidesToShow is 2, slidesToScroll is 2, and it advances', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 2, slidesToScroll: 2},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3'),
-            React.createElement('p', null, 'Slide 4')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3'),
+              React.createElement('p', null, 'Slide 4')
+            )
           ),
           container
         );
@@ -411,9 +453,11 @@ describe('Carousel', function () {
     it('should have currentSlide equal 1 for 3 slides if slidesToShow is 2, slidesToScroll is 2, and it advances', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToShow: 2, slidesToScroll: 2},
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -426,9 +470,11 @@ describe('Carousel', function () {
     it('should set slidesToScroll to passed in slidesToScroll', function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slidesToScroll: 3, width: "600px"},
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -440,9 +486,11 @@ describe('Carousel', function () {
       function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slideWidth: "250px", width: "600px", slidesToScroll: "auto"},
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -459,9 +507,11 @@ describe('Carousel', function () {
             cellSpacing: 100,
             slidesToScroll: "auto"
           },
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -473,9 +523,11 @@ describe('Carousel', function () {
       function() {
         component = ReactDOM.render(
           React.createElement(carousel, {slideWidth: "100px", width: "600px", slidesToScroll: "auto"},
-            React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', {className: 'test-slide'}, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -497,9 +549,11 @@ describe('Carousel', function () {
     it('should advance if nextSlide() is called', function() {
         component = ReactDOM.render(
           React.createElement(carousel, null,
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -512,9 +566,11 @@ describe('Carousel', function () {
     it('should not advance if nextSlide() is called and the currentSlide is the last slide', function() {
         component = ReactDOM.render(
           React.createElement(carousel, null,
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -529,9 +585,11 @@ describe('Carousel', function () {
     it('should not go back if previousSlide() is called and the currentSlide is the first slide', function() {
         component = ReactDOM.render(
           React.createElement(carousel, null,
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -544,9 +602,11 @@ describe('Carousel', function () {
     it('should go back if previousSlide() is called', function() {
         component = ReactDOM.render(
           React.createElement(carousel, null,
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
@@ -560,9 +620,11 @@ describe('Carousel', function () {
     it('should go to 2 if goToSlide(2) is called', function() {
         component = ReactDOM.render(
           React.createElement(carousel, null,
-            React.createElement('p', null, 'Slide 1'),
-            React.createElement('p', null, 'Slide 2'),
-            React.createElement('p', null, 'Slide 3')
+            React.createElement('div', {},
+              React.createElement('p', null, 'Slide 1'),
+              React.createElement('p', null, 'Slide 2'),
+              React.createElement('p', null, 'Slide 3')
+            )
           ),
           container
         );
